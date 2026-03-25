@@ -7,7 +7,6 @@
 ---
 
 ## Navigation
-* [Personal info](#personal-info)
 * [Contacts](#contacts)
 * [Additional information](#additional-information)
 * [Skills](#skills)
@@ -15,13 +14,6 @@
 * [Work experience](#work-experience)
 * [Courses](#courses)
 * [English level](#english-level)
-
----
-
-<a name="personal-info"></a>
-## Personal info
-* Name: Sidorovich Timofei
-* Status: Second-year university student
 
 ---
 
