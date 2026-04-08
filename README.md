@@ -1,1 +1,1 @@
-https://mixfight12.github.io/web-programming/cv.html
+https://mixfight12.github.io/web-programming/cv.md
