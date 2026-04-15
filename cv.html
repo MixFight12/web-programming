@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV</title>
+  <style>
+
+    body {
+      background-color: #d3d3d3;
+      margin: 0;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+    }
+
+    main {
+      background-color: #ffffff;
+      max-width: 800px;
+      width: 100%;
+      padding: 40px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      text-align: left;
+    }
+
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+    nav li {
+      font-size: 14px;
+    }
+
+    header#name img {
+      border-radius: 10px;
+      max-width: 100%;
+      height: auto;
+    }
+
+    pre#code {
+      background: #f4f4f4;
+      padding: 15px;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+      overflow-x: auto;
+    }
+
+    @media (max-width: 768px) {
+      main {
+        padding: 20px;
+        text-align: center !important;
+      }
+      
+      header#name, article, div, footer, h2, p {
+        text-align: center !important;
+      }
+
+      ol, ul {
+        list-style-position: inside !important;
+        padding: 0 !important;
+      }
+
+      pre#code {
+        text-align: left;
+        display: inline-block;
+      }
+    }
+    
+    .centered-content { text-align: center; }
+  </style>
+</head>
+<body>
+<main>
+
+<div class="centered-content">
+  <nav>
+    <ul style="list-style-position: inside; padding: 0; list-style-type: none;"> 
+      <li><a href="#name">Personal info</a></li>
+      <li><a href="#contacts">Contacts</a></li>
+      <li><a href="#aboutme">About me</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#code">Code</a></li>
+      <li><a href="#workexp">Experience</a></li>
+      <li><a href="#courses">Courses</a></li>
+      <li><a href="#english">English</a></li>
+    </ul>
+  </nav>
+  
+  <header id="name">
+    <h2>Sidorovich Timofei</h2>
+    <p>
+      <img src="my_photo.jpg" alt="profile picture" width="350">
+    </p>
+  </header>
+</div> 
+
+<article> 
+  <h2 id="contacts" style="color: chocolate;">Contacts:</h2>
+  <ol style="padding-left: 20px; list-style-type: decimal;">
+    <li>Phone: +1234567890</li>
+    <li>Email: email@mail.com</li>
+    <li>TikTok: @sergoochenkrutoi</li>
+  </ol>
+</article>
+
+<div> 
+    <h2 id="aboutme" style="color: brown;">Additional information</h2>
+    <p>I'm a second-year student, I don't have any work experience, but I'm interested in it. I'm hardworking, sociable, and I enjoy challenging tasks.</p>
+
+    <h2 id="skills" style="color: cadetblue;">Skills</h2>
+    <ol style="padding-left: 20px; list-style-type: disc;">
+      <li> Basic Python</li>
+      <li>Basic Html</li>
+      <li>Basic C#</li>
+      <li>Experience in Unity</li>
+    </ol>
+
+    <h2 style="color: darkolivegreen;">Code example</h2>
+    <div style="text-align: center;">
+        <pre id="code" style="display: inline-block;">
+import secrets
+import string
+
+def generate_password(length=16, use_symbols=True):
+    chars = string.ascii_letters + string.digits
+    
+    if use_symbols:
+        chars += string.punctuation
+    password = ''.join(secrets.choice(chars) for _ in range(length))
+    return password
+
+print(generate_password(12))
+        </pre>
+    </div>
+  <h2 id="workexp" style="color: darkmagenta;">Work experience</h2>
+    <ol style="padding-left: 20px; list-style-type: disc;">
+      <p>CV Project</p>
+    </ol>
+
+    <h2 id="courses" style="color: darksalmon;">Courses</h2>
+    <ol style="padding-left: 20px; list-style-type: disc;">
+      <li>Python: Course for beginners</li>
+      <li>Python: Course for advanced</li>
+      <li>C#: Course for beginners</li>
+    </ol>
+
+    <h2 id="english" style="color: rgb(194, 77, 37);">English level</h2>
+    <ol style="padding-left: 20px; list-style-type: disc;">
+      <p>B2</p> 
+    </ol> 
+</div>
+<footer style="text-align: center; margin-top: 20px; color: #666; font-size: 12px;">
+    Was named Person Of The Year in 2006.
+</footer>
+
+</main>
+</body>
+</html>
